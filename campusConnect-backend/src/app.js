@@ -40,7 +40,7 @@ app.use(
       if (!origin) return callback(null, true);
 
       const allowed =
-        origin === "https://campusconnect1-three.vercel.app" ||
+        origin === "https://campus-connect-psi-nine.vercel.app" ||
         origin.endsWith(".vercel.app") ||
         origin.includes("localhost");
 
