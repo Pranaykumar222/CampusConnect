@@ -335,8 +335,8 @@ const handleMessage = async () => {
 
       
       {isOwnProfile && (
-        <Modal isOpen={editOpen} onClose={() => setEditOpen(false)} title="Edit Profile" size="lg">
-          <div className="space-y-4">
+        <Modal isOpen={editOpen} onClose={() => setEditOpen(false)} title="Edit Profile" size="md">
+          <div className="space-y-4 max-h-[70vh] overflow-y-auto pr-2">
             {["firstName","lastName","university","major","academicYear","location"].map((field) => (
               <div key={field}>
                 <label className="text-sm font-medium capitalize">{field}</label>
